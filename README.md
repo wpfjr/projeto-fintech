@@ -2,25 +2,84 @@
 
 Projeto desenvolvido para a FIAP com o objetivo de criar uma interface web para controle financeiro pessoal.
 
-## Funcionalidades
+## 📋 Sobre o Projeto
 
-- Dashboard financeiro
-- Visualização de saldo atual
-- Controle de receitas e gastos
-- Acompanhamento de metas financeiras
-- Relatórios visuais
-- Layout responsivo
+O Fintech Dashboard foi desenvolvido para auxiliar usuários no gerenciamento de suas finanças pessoais, permitindo visualizar indicadores financeiros importantes de forma clara e organizada.
 
-## Tecnologias Utilizadas
+A interface apresenta informações como:
 
-- HTML5
-- CSS3
-- Tailwind CSS
+* Saldo atual
+* Receitas
+* Gastos
+* Progresso das metas financeiras
+* Relatórios visuais
 
-## Objetivo
+## 🚀 Tecnologias Utilizadas
 
-Fornecer uma interface moderna e intuitiva para auxiliar usuários no gerenciamento de suas finanças pessoais.
+* HTML5
+* CSS3
+* Tailwind CSS
 
-## Autor
+## 📱 Responsividade
 
-Walter Patrício de Freitas Júnior
+O projeto foi desenvolvido com foco em responsividade, adaptando-se a diferentes tamanhos de tela, incluindo:
+
+* Desktop
+* Tablet
+* Smartphones
+
+## 📂 Estrutura do Projeto
+
+```text
+projeto-fintech/
+│
+├── index.html
+├── style.css
+├── assets/
+│   └── imagens
+│
+└── README.md
+```
+
+## ▶️ Como Executar o Projeto
+
+### Opção 1 - Abrir diretamente no navegador
+
+1. Faça o download ou clone este repositório.
+2. Extraia os arquivos (caso tenha baixado o ZIP).
+3. Abra o arquivo `index.html` em qualquer navegador moderno.
+
+### Opção 2 - Utilizando VS Code
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/wpfjr/projeto-fintech.git
+```
+
+2. Abra a pasta do projeto no Visual Studio Code.
+
+3. Execute a extensão **Live Server**.
+
+4. Abra o navegador através do endereço gerado pela extensão.
+
+## 🔗 Repositório
+
+GitHub:
+https://github.com/wpfjr/projeto-fintech
+
+## 🎯 Objetivo Acadêmico
+
+Projeto desenvolvido como atividade prática da FIAP para aplicação dos conceitos de:
+
+* Interface Web
+* HTML
+* CSS
+* Tailwind CSS
+* Responsividade
+* Organização Visual
+* Desenvolvimento Front-End
+
+## 👨‍💻 Autor
+
+Walter Júnior
