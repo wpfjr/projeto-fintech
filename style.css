@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --blue: #3f66e8;
+  --blue-dark: #2f5be7;
+  --text: #263041;
+  --muted: #4b5565;
+  --line: #e6e9ef;
+  --page: #f6f7fb;
+  --white: #ffffff;
+  --green: #4db765;
+  --red: #ef3434;
+  --purple: #9238ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 2;
+  display: flex;
+  width: 265px;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--white);
+  border-right: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 84px;
+  padding: 0 27px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.brand-mark {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.brand h1 {
+  margin: 0;
+  color: var(--blue);
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.sidebar-nav {
+  display: grid;
+  gap: 22px;
+  padding: 17px 15px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 50px;
+  padding: 0 18px;
+  border-radius: 8px;
+  color: #3f4857;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.menu-item svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  stroke: currentColor;
+  stroke-width: 2.25;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.menu-item svg text {
+  fill: currentColor;
+  stroke: none;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.menu-item.active {
+  min-height: 51px;
+  color: #ffffff;
+  background: var(--blue);
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  padding: 15px;
+  border-top: 1px solid #edf0f4;
+  background: var(--white);
+}
+
+.avatar {
+  display: grid;
+  width: 43px;
+  height: 43px;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.user-card p {
+  margin: 0 0 3px;
+  color: #384152;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.user-card span {
+  display: block;
+  color: #667085;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.content {
+  flex: 1;
+  margin-left: 265px;
+  padding: 34px 220px 18px;
+}
+
+.content h2 {
+  margin: 0 0 32px;
+  color: #263041;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.finance-card,
+.chart-panel {
+  background: var(--white);
+  border: 1px solid #e8ebf1;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px rgba(17, 24, 39, 0.06);
+}
+
+.finance-card {
+  min-height: 190px;
+  padding: 26px 25px;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 19px;
+}
+
+.card-heading h3 {
+  margin: 0;
+  color: #556071;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.card-icon {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  border-radius: 9px;
+}
+
+.card-icon svg {
+  width: 25px;
+  height: 25px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.card-icon.blue {
+  color: var(--blue);
+  background: #e9efff;
+}
+
+.card-icon.red {
+  color: var(--red);
+  background: #ffe4e4;
+}
+
+.card-icon.green {
+  color: var(--green);
+  background: #dcfae5;
+}
+
+.card-icon.purple {
+  color: var(--purple);
+  background: #f0e4ff;
+}
+
+.value {
+  margin: 0;
+  color: #252e3f;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 9px 0 0;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.trend svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  stroke-width: 2.25;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.trend.positive {
+  color: var(--green);
+}
+
+.trend.negative {
+  color: var(--red);
+}
+
+.progress-bar {
+  height: 8px;
+  margin-top: 16px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e4e7ec;
+}
+
+.progress-bar span {
+  display: block;
+  width: 78%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--blue);
+}
+
+.chart-panel {
+  padding: 27px 25px 25px;
+}
+
+.chart-panel h3 {
+  margin: 0 0 24px;
+  color: #263041;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.chart-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.chart-wrap svg {
+  width: 100%;
+  height: clamp(230px, 24vw, 310px);
+}
+
+.chart-grid line {
+  stroke: #e6e9ef;
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.chart-axis line {
+  stroke: #9ba5b3;
+  stroke-width: 1.4;
+}
+
+.chart-line {
+  fill: none;
+  stroke: var(--blue);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.chart-points circle {
+  fill: #ffffff;
+  stroke: var(--blue);
+  stroke-width: 3;
+}
+
+.x-labels,
+.y-labels {
+  fill: #6b7280;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.x-labels text {
+  text-anchor: middle;
+}
+
+.y-labels text {
+  text-anchor: end;
+}
+
+@media (max-width: 1500px) {
+  .content {
+    padding-right: 72px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content {
+    padding: 30px 28px 28px;
+    margin-left: 245px;
+  }
+
+  .sidebar {
+    width: 245px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    display: block;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .sidebar-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .user-card {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 24px 16px;
+  }
+
+  .content h2 {
+    font-size: 27px;
+  }
+
+  .finance-card {
+    min-height: 175px;
+  }
+
+  .value {
+    font-size: 32px;
+  }
+
+  .chart-wrap {
+    overflow-x: hidden;
+  }
+
+  .chart-wrap svg {
+    height: 230px;
+    min-width: 0;
+  }
+
+  .x-labels,
+  .y-labels {
+    font-size: 18px;
+  }
+}

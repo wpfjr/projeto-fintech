@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fintech | Dashboard Financeiro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+  <div class="app-shell min-h-screen">
+    <aside class="sidebar bg-white border-r border-gray-200">
+      <div>
+        <div class="brand flex items-center">
+          <span class="brand-mark" aria-hidden="true">💰</span>
+          <h1>Fintech</h1>
+        </div>
+
+        <nav class="sidebar-nav grid" aria-label="Menu principal">
+          <a href="#" class="menu-item active flex items-center font-bold rounded-lg">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="4" width="6" height="6" rx="1.2"></rect>
+              <rect x="14" y="4" width="6" height="6" rx="1.2"></rect>
+              <rect x="4" y="14" width="6" height="6" rx="1.2"></rect>
+              <rect x="14" y="14" width="6" height="6" rx="1.2"></rect>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a href="#" class="menu-item flex items-center font-bold rounded-lg">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4.5" y="3.5" width="15" height="17" rx="1.3"></rect>
+              <text x="12" y="16.2">$</text>
+            </svg>
+            <span>Gastos</span>
+          </a>
+          <a href="#" class="menu-item flex items-center font-bold rounded-lg">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"></circle>
+              <circle cx="12" cy="12" r="5"></circle>
+              <circle cx="12" cy="12" r="1.8"></circle>
+            </svg>
+            <span>Metas</span>
+          </a>
+          <a href="#" class="menu-item flex items-center font-bold rounded-lg">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.5 19V5.5"></path>
+              <path d="M4.5 19h15"></path>
+              <path d="M8.5 16.5V10"></path>
+              <path d="M12 16.5V7"></path>
+              <path d="M15.5 16.5v-5"></path>
+              <path d="M19 16.5v-2.5"></path>
+            </svg>
+            <span>Relatórios</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="user-card flex items-center">
+        <div class="avatar flex items-center justify-center rounded-full bg-blue-600 text-white">U</div>
+        <div>
+          <p>Usuário</p>
+          <span>user@fintech.com</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content flex-1">
+      <h2 class="font-extrabold">Dashboard Financeiro</h2>
+
+      <section class="summary-grid grid grid-cols-1 lg:grid-cols-2" aria-label="Resumo financeiro">
+        <article class="finance-card bg-white rounded-2xl shadow-sm">
+          <div class="card-heading flex items-center">
+            <div class="card-icon blue flex items-center justify-center">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 7h12a2 2 0 0 1 2 2v8.2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8.8A1.8 1.8 0 0 1 5.8 7H6Z"></path>
+                <path d="M6 7V5.8A1.8 1.8 0 0 1 7.8 4h8.7"></path>
+                <path d="M15.5 11.1H20v4h-4.5a2 2 0 0 1 0-4Z"></path>
+                <circle cx="16.7" cy="13.1" r=".45"></circle>
+              </svg>
+            </div>
+            <h3>Saldo Atual</h3>
+          </div>
+          <p class="value">R$ 12.450,00</p>
+          <p class="trend positive flex items-center font-bold">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 16l6-6 4 4 6-7"></path>
+              <path d="M15 7h5v5"></path>
+            </svg>
+            +12% este mês
+          </p>
+        </article>
+
+        <article class="finance-card bg-white rounded-2xl shadow-sm">
+          <div class="card-heading flex items-center">
+            <div class="card-icon red flex items-center justify-center">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4.5 7.5 10 13l3.8-3.8 5.7 5.7"></path>
+                <path d="M15.2 14.9h4.3v-4.3"></path>
+              </svg>
+            </div>
+            <h3>Total Gastos</h3>
+          </div>
+          <p class="value">R$ 2.390,00</p>
+          <p class="trend negative flex items-center font-bold">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7l6 6 4-4 6 7"></path>
+              <path d="M15 16h5v-5"></path>
+            </svg>
+            -8% este mês
+          </p>
+        </article>
+
+        <article class="finance-card bg-white rounded-2xl shadow-sm">
+          <div class="card-heading flex items-center">
+            <div class="card-icon green flex items-center justify-center">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4.5 16.5 10 11l3.8 3.8 5.7-5.7"></path>
+                <path d="M15.2 9.1h4.3v4.3"></path>
+              </svg>
+            </div>
+            <h3>Total Receitas</h3>
+          </div>
+          <p class="value">R$ 14.840,00</p>
+          <p class="trend positive flex items-center font-bold">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 16l6-6 4 4 6-7"></path>
+              <path d="M15 7h5v5"></path>
+            </svg>
+            +5% este mês
+          </p>
+        </article>
+
+        <article class="finance-card bg-white rounded-2xl shadow-sm">
+          <div class="card-heading flex items-center">
+            <div class="card-icon purple flex items-center justify-center">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8.5"></circle>
+                <circle cx="12" cy="12" r="5"></circle>
+                <circle cx="12" cy="12" r="1.7"></circle>
+              </svg>
+            </div>
+            <h3>Progresso das Metas</h3>
+          </div>
+          <p class="value">78%</p>
+          <div class="progress-bar rounded-full overflow-hidden" aria-label="78% das metas concluídas">
+            <span></span>
+          </div>
+        </article>
+      </section>
+
+      <section class="chart-panel bg-white rounded-2xl shadow-sm">
+        <h3>Gastos nos Últimos 6 Meses</h3>
+
+        <div class="chart-wrap">
+          <svg viewBox="0 0 1280 310" preserveAspectRatio="none" role="img" aria-label="Gráfico de gastos dos últimos 6 meses">
+            <g class="chart-grid">
+              <line x1="96" y1="30" x2="1250" y2="30"></line>
+              <line x1="96" y1="90" x2="1250" y2="90"></line>
+              <line x1="96" y1="150" x2="1250" y2="150"></line>
+              <line x1="96" y1="210" x2="1250" y2="210"></line>
+              <line x1="96" y1="270" x2="1250" y2="270"></line>
+              <line x1="96" y1="30" x2="96" y2="270"></line>
+              <line x1="326" y1="30" x2="326" y2="270"></line>
+              <line x1="556" y1="30" x2="556" y2="270"></line>
+              <line x1="786" y1="30" x2="786" y2="270"></line>
+              <line x1="1016" y1="30" x2="1016" y2="270"></line>
+              <line x1="1250" y1="30" x2="1250" y2="270"></line>
+            </g>
+            <g class="chart-axis">
+              <line x1="96" y1="30" x2="96" y2="270"></line>
+              <line x1="96" y1="270" x2="1250" y2="270"></line>
+            </g>
+            <g class="y-labels">
+              <text x="84" y="35">6000</text>
+              <text x="84" y="95">4500</text>
+              <text x="84" y="155">3000</text>
+              <text x="84" y="215">1500</text>
+              <text x="84" y="275">0</text>
+            </g>
+            <path class="chart-line" d="M96 110 C170 130 242 150 326 150 C410 150 460 72 556 74 C650 78 706 158 786 160 C870 184 928 198 1016 198 C1096 198 1172 192 1250 178"></path>
+            <g class="chart-points">
+              <circle cx="96" cy="110" r="4"></circle>
+              <circle cx="326" cy="150" r="4"></circle>
+              <circle cx="556" cy="74" r="4"></circle>
+              <circle cx="786" cy="160" r="4"></circle>
+              <circle cx="1016" cy="198" r="4"></circle>
+              <circle cx="1250" cy="178" r="4"></circle>
+            </g>
+            <g class="x-labels">
+              <text x="96" y="292">Jan</text>
+              <text x="326" y="292">Fev</text>
+              <text x="556" y="292">Mar</text>
+              <text x="786" y="292">Abr</text>
+              <text x="1016" y="292">Mai</text>
+              <text x="1250" y="292">Jun</text>
+            </g>
+          </svg>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
